@@ -1,5 +1,5 @@
 // internal imports are here
-const products__collection = require("../models/products.model");
+const products__collection = require("../../models/products.model");
 
 // get products api controller here
 exports.get__sale__products = async (req, res, next) => {

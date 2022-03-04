@@ -4,10 +4,10 @@ const router = express.Router();
 
 // internal exports are here
 const {
-  get__search__result,
-} = require("../controllers/searchedProducts.controller");
+  get__sale__products,
+} = require("../../controllers/get__apis__controllers/sale__products.controller");
 
 // products get api here
-router.get("/products/searchedProducts/:productTitle", get__search__result);
+router.get("/saleProducts", get__sale__products);
 
 module.exports = router;

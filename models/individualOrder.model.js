@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const orderSchema = mongoose.Schema({
   orderedProducts: {
-    type: Array,
+    type: Object,
     require: true,
   },
   customerInfo: {
@@ -22,7 +22,7 @@ const orderSchema = mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["PENDDING", "COMPLETED", "PAID"],
+    enum: ["pendding", "completed", "paid"],
     require: true,
   },
 });

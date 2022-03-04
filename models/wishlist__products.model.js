@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const carted__productsSchema = new mongoose.Schema({
+const wishlist__productsSchema = new mongoose.Schema({
   cartedProduct: {
     type: Object,
     require: true,
@@ -25,9 +25,9 @@ const carted__productsSchema = new mongoose.Schema({
 });
 
 // make this schema a data model
-const Carted__Products = mongoose.model(
-  "Carted__Products",
-  carted__productsSchema
+const wishlist__Products = mongoose.model(
+  "wishlist__Products",
+  wishlist__productsSchema
 );
 
-module.exports = Carted__Products;
+module.exports = wishlist__Products;

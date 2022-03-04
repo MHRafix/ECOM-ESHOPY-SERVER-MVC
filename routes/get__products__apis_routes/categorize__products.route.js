@@ -4,13 +4,10 @@ const router = express.Router();
 
 // internal exports are here
 const {
-  get__products__by__price,
-} = require("../controllers/productsByPrice.controller");
+  get__catgorize__products,
+} = require("../../controllers/get__apis__controllers/categorize__products.controller");
 
 // products get api here
-router.get(
-  "/products/filteredProducts/:minPrice/:maxPrice",
-  get__products__by__price
-);
+router.get("/products/:category", get__catgorize__products);
 
 module.exports = router;

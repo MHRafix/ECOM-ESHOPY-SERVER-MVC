@@ -1,7 +1,7 @@
 const ObjectId = require("mongodb").ObjectId;
 
 // internal imports are here
-const products__collection = require("../models/products.model");
+const products__collection = require("../../models/products.model");
 // get products api controller here
 exports.get__single__product = async (req, res, next) => {
   try {

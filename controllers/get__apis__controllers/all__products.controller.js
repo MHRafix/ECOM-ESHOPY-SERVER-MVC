@@ -2,10 +2,10 @@
 const createError = require("http-errors");
 
 // internal imports are here
-const products__collection = require("../models/products.model");
+const products__collection = require("../../models/products.model");
 
 // get products api controller here
-exports.get__products = async (req, res, next) => {
+exports.get__all__products = async (req, res, next) => {
   try {
     const all__products = await products__collection.find();
     res.send(all__products);

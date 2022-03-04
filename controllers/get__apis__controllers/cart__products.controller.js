@@ -1,5 +1,5 @@
 // internal imports are here
-const carted__products__collection = require("../models/cartedProducts.model");
+const carted__products__collection = require("../../models/cartedProducts.model");
 
 // get products api controller here
 exports.get__carted__products = async (req, res, next) => {

@@ -4,10 +4,10 @@ const router = express.Router();
 
 // internal exports are here
 const {
-  get__individual__order,
-} = require("../controllers/individualOrder.controller");
+  post__carted__products,
+} = require("../../controllers/post__apis__controllers/add__to__cartlist.controller");
 
 // products get api here
-router.get("/allOrders/myOrders/:email", get__individual__order);
+router.post("/addToCartList", post__carted__products);
 
 module.exports = router;

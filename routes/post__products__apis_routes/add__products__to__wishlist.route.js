@@ -3,9 +3,11 @@ const express = require("express");
 const router = express.Router();
 
 // internal exports are here
-const { get__products } = require("../controllers/products.controller");
+const {
+  post__wishlist__products,
+} = require("../../controllers/post__apis__controllers/add__to__wishlist.controller");
 
 // products get api here
-router.get("/products", get__products);
+router.post("/addToWishList", post__wishlist__products);
 
 module.exports = router;
