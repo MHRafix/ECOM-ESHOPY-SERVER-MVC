@@ -29,10 +29,16 @@ const {
 
 // all post api route import here
 const {
-  add__products__to__cart,
-  add__order__to__database,
-  add__products__to__wishlist,
+  add__products__to__cart__route,
+  add__products__to__wishlist__route,
+  add__order__to__database__route,
 } = require("./post__apis__import__url/import__url");
+
+// all delete api route import here
+const {
+  delete__wishlist__products__route,
+  delete__cartlist__products__route,
+} = require("./delete__apis__import__url/import__url");
 
 // MidleWere and request parser
 app.use(cors());
@@ -64,9 +70,13 @@ app.use(all__products__route);
 app.use(new__arrival__route);
 
 // all post api here
-app.use(add__products__to__cart);
-app.use(add__products__to__wishlist);
-app.use(add__order__to__database);
+app.use(add__products__to__cart__route);
+app.use(add__products__to__wishlist__route);
+app.use(add__order__to__database__route);
+
+// all delete api here
+app.use(delete__cartlist__products__route);
+app.use(delete__wishlist__products__route);
 
 // Check server is running or not
 app.get("/", (req, res) => {
