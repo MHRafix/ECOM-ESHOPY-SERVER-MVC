@@ -38,6 +38,7 @@ const {
 const {
   delete__wishlist__products__route,
   delete__cartlist__products__route,
+  delete__orders__route,
 } = require("./delete__apis__import__url/import__url");
 
 // MidleWere and request parser
@@ -77,6 +78,7 @@ app.use(add__order__to__database__route);
 // all delete api here
 app.use(delete__cartlist__products__route);
 app.use(delete__wishlist__products__route);
+app.use(delete__orders__route);
 
 // Check server is running or not
 app.get("/", (req, res) => {
