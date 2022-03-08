@@ -7,7 +7,7 @@ const {
   post__carted__products,
 } = require("../../controllers/post__apis__controllers/add__to__cartlist.controller");
 
-// products get api here
+// products post api here
 router.post("/addToCartList", post__carted__products);
 
 module.exports = router;

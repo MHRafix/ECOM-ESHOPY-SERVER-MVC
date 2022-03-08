@@ -7,7 +7,7 @@ const {
   post__wishlist__products,
 } = require("../../controllers/post__apis__controllers/add__to__wishlist.controller");
 
-// products get api here
+// products post api here
 router.post("/addToWishList", post__wishlist__products);
 
 module.exports = router;

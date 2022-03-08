@@ -5,6 +5,10 @@ const carted__productsSchema = new mongoose.Schema({
     type: Object,
     require: true,
   },
+  uniqueId: {
+    type: String,
+    require: true,
+  },
   size: {
     type: String,
     enum: ["S", "M", "L", "XL", "XXL"],

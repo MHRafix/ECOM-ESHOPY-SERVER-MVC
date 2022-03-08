@@ -7,7 +7,7 @@ const {
   post__ordered__products,
 } = require("../../controllers/post__apis__controllers/add_order__products.controller");
 
-// products get api here
+// products post api here
 router.post("/allCustomersOrders", post__ordered__products);
 
 module.exports = router;
