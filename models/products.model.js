@@ -31,7 +31,7 @@ const productsSchema = mongoose.Schema({
     type: Array,
   },
   ratingsandreviews: {
-    type: String,
+    type: Array,
   },
 });
 
