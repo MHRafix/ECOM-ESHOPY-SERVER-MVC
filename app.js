@@ -25,6 +25,7 @@ const {
   size__by__products__route,
   products__by__price__route,
   wishlist__products__route,
+  shop__products__route,
 } = require("./get__apis__import__url/import__url");
 
 // all post api route import here
@@ -72,6 +73,7 @@ app.use(individual__order__route);
 app.use(single__product__route);
 app.use(cart__products__route);
 app.use(sale__products__route);
+app.use(shop__products__route);
 app.use(search__result__route);
 app.use(all__products__route);
 app.use(new__arrival__route);

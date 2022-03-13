@@ -1,5 +1,7 @@
 const all__products__route = require("../routes/get__products__apis_routes/all__products.route");
 
+const shop__products__route = require("../routes/get__products__apis_routes/shopProducts.route");
+
 const new__arrival__route = require("../routes/get__products__apis_routes/new__arrival__products.route");
 
 const sale__products__route = require("../routes/get__products__apis_routes/sale__products.route");
@@ -28,6 +30,7 @@ module.exports = {
   individual__order__route,
   single__product__route,
   search__result__route,
+  shop__products__route,
   cart__products__route,
   sale__products__route,
   all__products__route,

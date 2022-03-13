@@ -4,9 +4,9 @@ const products__collection = require("../../models/products.model");
 // get products api controller here
 exports.get__sale__products = async (req, res, next) => {
   try {
-    const all__products = await products__collection.find();
+    const all__products = await products__collection.find().limit(30);
     const sale__products = all__products.filter(
-      (product) => product.salePrice === "0"
+      (product) => product.salePrice !== "0"
     );
     res.send(sale__products);
   } catch (err) {

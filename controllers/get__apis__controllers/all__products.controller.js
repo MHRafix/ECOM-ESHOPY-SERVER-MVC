@@ -7,20 +7,20 @@ const products__collection = require("../../models/products.model");
 // get products api controller here
 exports.get__all__products = async (req, res, next) => {
   try {
-    const all__products = await products__collection.find();
+    const all__products = await products__collection.find().limit(12);
     res.send(all__products);
   } catch (err) {
     next(err);
   }
 };
 
-// post products api controller here
-exports.postProducts = async (req, res, next) => {
-  try {
-    const product__data = req.body;
-    const result = await products__collection.insertOne(product__data);
-    res.json(result);
-  } catch (err) {
-    next(err);
-  }
-};
+// // post products api controller here
+// exports.postProducts = async (req, res, next) => {
+//   try {
+//     const product__data = req.body;
+//     const result = await products__collection.insertOne(product__data);
+//     res.json(result);
+//   } catch (err) {
+//     next(err);
+//   }
+// };
