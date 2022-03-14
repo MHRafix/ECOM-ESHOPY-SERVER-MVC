@@ -12,8 +12,8 @@ exports.get__products__by__price = async (req, res, next) => {
     const maximum__price = req.params.maxPrice;
     const filtered__products = all__products.filter(
       (product) =>
-        product.salePrice >= Number(minimum__price) &&
-        product.salePrice <= Number(maximum__price)
+        product.regularPrice >= Number(minimum__price) &&
+        product.regularPrice <= Number(maximum__price)
     );
     res.send(filtered__products);
   } catch (err) {
