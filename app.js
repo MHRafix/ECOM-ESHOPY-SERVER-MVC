@@ -39,6 +39,7 @@ const {
 const {
   update__cart__products__route,
   update__products__review__route,
+  decreaseCartQuantityRoute,
 } = require("./update__apis__import__url/import__url");
 
 // all delete api route import here
@@ -84,6 +85,7 @@ app.use(add__products__to__wishlist__route);
 app.use(add__order__to__database__route);
 
 // all update or put api here
+app.use(decreaseCartQuantityRoute);
 app.use(update__cart__products__route);
 app.use(update__products__review__route);
 

@@ -8,6 +8,6 @@ const {
 } = require("../../controllers/update__apis__controllers/update__cart__products.controller");
 
 // product update / put api here
-router.patch("/updateCartProduct/:email/:id", update__carted__products);
+router.patch("/incCartProductQty/:email/:id", update__carted__products);
 
 module.exports = router;
