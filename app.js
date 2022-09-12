@@ -56,7 +56,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // database connection here
 mongoose
-  .connect(process.env.MONGODB__CONNECTION__STRING, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
